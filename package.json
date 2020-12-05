@@ -7,7 +7,8 @@
     "start:dev": "ts-node src/app.ts",
     "start:watch": "nodemon -w src --exec ts-node src/app.ts",
     "build": "npm run clean && npm run tsc:compile",
-    "build:all": "npm run build && npm run openapi:bundle",
+    "build:all": "npm run build && npm run build:binary",
+    "build:binary": "pkg dist/app.js",
     "clean": "rimraf dist",
     "tsc:compile": "tsc"
   },
@@ -15,6 +16,7 @@
   "license": "ISC",
   "dependencies": {
     "@types/node": "^14.14.10",
+    "pkg": "^4.4.9",
     "rgb-color": "^2.1.2",
     "ts-node": "^9.0.0",
     "typescript": "^4.0.5",
