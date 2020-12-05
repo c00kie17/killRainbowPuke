@@ -40,13 +40,11 @@ const run = async():Promise<void> =>{
     let counter = 0
     if(deviceControllers.length > 0){
         while(1){
-            console.log(`sending signal to ${deviceControllers[counter].name}`)
             await deviceControllers[counter].loop()
             await delay(10000/deviceControllers.length)
             counter ++
             if(counter === deviceControllers.length){
                 counter = 0
-                console.clear()
             }
         }
     }

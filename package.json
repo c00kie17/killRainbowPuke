@@ -4,8 +4,12 @@
   "description": "",
   "main": "app.ts",
   "scripts": {
-    "start:dev": "ts-node src/runserver.ts",
-    "start:watch": "nodemon -w src --exec ts-node src/app.ts"
+    "start:dev": "ts-node src/app.ts",
+    "start:watch": "nodemon -w src --exec ts-node src/app.ts",
+    "build": "npm run clean && npm run tsc:compile",
+    "build:all": "npm run build && npm run openapi:bundle",
+    "clean": "rimraf dist",
+    "tsc:compile": "tsc"
   },
   "author": "c00kie",
   "license": "ISC",
