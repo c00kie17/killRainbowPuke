@@ -6,8 +6,8 @@
 1. Run `npm i` to insall all dependencies
 2. Build binary by running `npm run build:all`
 3. Make sure `run.sh` has execute permissions `chmod +x run.sh`
-4. Run H100i Plainum and Corsair Commander Pro Led killed by running `./run.sh` 
+4. Run H100i Plainum and Corsair Commander Pro LED killer by running `./run.sh` 
 
 ### Note
- * Corsair Commander Pro needs a consrant signal to kill the lights thus the app fot it will run the background
+ * Corsair Commander Pro needs a consant signal to kill the lights thus the app for it will run the background
 
